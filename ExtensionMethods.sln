@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods.ExtensionSamples", "ExtensionMethods.Extensions\ExtensionMethods.ExtensionSamples.csproj", "{1DAF1571-C080-42B7-A8E6-371007D273A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionCaller", "ExtensionCaller\ExtensionCaller.csproj", "{B2BC01D9-AF71-45D5-998E-DE94D5B53839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DAF1571-C080-42B7-A8E6-371007D273A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAF1571-C080-42B7-A8E6-371007D273A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAF1571-C080-42B7-A8E6-371007D273A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAF1571-C080-42B7-A8E6-371007D273A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BC01D9-AF71-45D5-998E-DE94D5B53839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BC01D9-AF71-45D5-998E-DE94D5B53839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BC01D9-AF71-45D5-998E-DE94D5B53839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BC01D9-AF71-45D5-998E-DE94D5B53839}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
