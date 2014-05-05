@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace System
 {
-	public static class EnumExtensions
-	{
-		public static string ToUserFriendlyString(this Enum value)
-		{
-			return Enum.GetName(value.GetType(), value);
-		}
+    public static class EnumExtensions
+    {
+        public static string ToUserFriendlyString(this Enum value)
+        {
+            return Enum.GetName(value.GetType(), value);
+        }
 
-		public static string GetDetailedDescription(this Enum value)
-		{
-			FieldInfo fieldInfo = value.GetType().GetField(value.ToUserFriendlyString());
-			DescriptionAttribute descriptionAttribute = fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false).FirstOrDefault() as DescriptionAttribute;
-			return descriptionAttribute == null ? value.ToUserFriendlyString() : descriptionAttribute.Description;
-		}
-	}
+        public static string GetDetailedDescription(this Enum value)
+        {
+            FieldInfo fieldInfo = value.GetType().GetField(value.ToUserFriendlyString());
+            DescriptionAttribute descriptionAttribute = fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false).FirstOrDefault() as DescriptionAttribute;
+            return descriptionAttribute == null ? value.ToUserFriendlyString() : descriptionAttribute.Description;
+        }
+    }
 }
